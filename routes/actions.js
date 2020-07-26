@@ -48,10 +48,10 @@ router.post('/jsonpatch', isAuthenticated, (req, res, next)=> {
 
 });
 
-router.get('/resize',
+router.post('/resize',
     isAuthenticated,
     (req, res, next) =>{
-      let url = req.query.url;
+      let url = req.body.url;
       if (!url) {
         return res.status(400).json({success: false, error: "please provide url"});
       }
@@ -63,6 +63,7 @@ router.get('/resize',
           });
         }
         try {
+         console.log(result.headers);
           let mime = result.headers['content-type'].split('/')[1];
           console.log(mime);
           if (["jpg", "png", "jpeg", "webp"].includes(mime)) {

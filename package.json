@@ -1,6 +1,6 @@
 {
-  "name": "attainu",
-  "version": "0.0.0",
+  "name": "auSolution",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node --experimental-json-modules ./bin/www.js"
