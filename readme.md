@@ -55,5 +55,5 @@ curl --location --request POST 'localhost:3000/actions/resize' \
 ```
 
 Possible improvements
-1.image link provided for resize api might not respond with content-type header. 'mmmagic' module can be used to detect mimetype after the file is downloaded and then can be checked if the file is an image
-2.Error messages can be more specific. 
+- image link provided for resize api might not respond with content-type header. 'mmmagic' module can be used to detect mimetype after the file is downloaded and then can be checked if the file is an image
+- Error messages can be more specific. 
