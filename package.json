@@ -1,0 +1,24 @@
+{
+  "name": "attainu",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node --experimental-json-modules ./bin/www.js"
+  },
+  "engines": {
+    "node": ">=14.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "jsonpatch": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "request": "^2.88.2",
+    "sharp": "^0.25.4"
+  },
+  "devDependencies": {
+  }
+}
